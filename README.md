@@ -10,6 +10,7 @@ In Git Bash (or any terminal)..
 ## Branches
 - **Asset-management** - Learnt how to load CSS, images & data (json, csv, xml, etc).
 - **Output-management** - Learnt how to use `HTML Webpack Plugin` to automatically recreate an `index.html` with added bundles & `Clean Webpack Plugin` to clean the `/dist` folder before each build.
+- **Dev-guide** - Learnt about source maps to track errors in the original source code. 
 
 ## Tech Stack
 - Webpack.js
