@@ -32,3 +32,8 @@ In Git Bash (or any terminal)..
 
 ## Future Learning
 - Need to learn how to load fonts. 
+
+## Blockers/Resolutions
+| Blockers | Resolutions |
+|----------|-------------|
+| Couldn't run webpack dev server as port 3000 was already in use. | First, open CMD.exe, enter `netstat -ano | findstr :<PORT>` (`<PORT>` should be the port number that the server is running on). Next, enter `taskkill /PID <PID> /F`. [Click here for an example](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) |
