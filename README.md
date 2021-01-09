@@ -9,13 +9,24 @@ In Git Bash (or any terminal)..
 
 ## Branches
 - **Asset-management** - Learnt how to load CSS, images & data (json, csv, xml, etc).
-- **Output-management** - Learnt how to use `HTML Webpack Plugin` to automatically recreate an `index.html` with added bundles & `Clean Webpack Plugin` to clean the `/dist` folder before each build.
-- **Dev-guide** - Learnt about source maps to track errors in the original source code. 
+- **Output-management** - Learnt how to use `HTML Webpack Plugin` to automatically recreate an `index.html` with auto-created bundles & `Clean Webpack Plugin` to clean the `/dist` folder before each build.
+- **Dev-guide** - Learnt about source maps to track errors in the original source code. Learnt the existence of numerous options (i.e. webpack's `watch mode`, `webpack-dev-server` & `webpack-dev-middleware`) that recompile code when a code change is detected.
 
 ## Tech Stack
 - Webpack.js
 - JavaScript
 - HTML/CSS
 
-## Things I have to learn
+## What Have I Learnt
+- The *HTML Webpack* plugin recreates `dist/index.html` with auto-created bundles.
+
+- The *Clean Webpack* Plugin cleans the `/dist` folder (before each build) by deleting redundant/old files. 
+
+- By setting `cleanStaleWebpackAssets` to `false`, `index.html` will not be removed by the result of an incremental build (triggered by watch mode).
+
+- Webpack's watch mode recompiles code after detecting a code change.
+
+- Webpack's dev server is capable of live reloading. 
+
+## Future Learning
 - Need to learn how to load fonts. 
