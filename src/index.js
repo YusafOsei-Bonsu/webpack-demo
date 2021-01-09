@@ -3,9 +3,9 @@ import './style.css';
 import Icon from './images/icon.png';
 import Data from './data/data.xml';
 import Notes from './data/data.csv';
-import toml from './data.toml';
-import yaml from './data.yaml';
-import json from './data.json5';
+import toml from './json/data.toml';
+import yaml from './json/data.yaml';
+import json from './json/data.json5';
 
 console.log(toml.title); // `TOML Example`
 console.log(toml.owner.name); // `Tom Preston-Werner`
