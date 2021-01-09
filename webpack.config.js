@@ -8,9 +8,9 @@ module.exports = {
        index: './src/index.js',
        print: './src/print.js'
     },
-    devtool: 'inline-source-map',
+    devtool: 'inline-source-map', // locates the file where an error has occurred 
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }), // prevents the deletion of index.html (as a result of another build)
         new HtmlWebpackPlugin({ title: "Learning Webpack" })
     ],
     output: {
