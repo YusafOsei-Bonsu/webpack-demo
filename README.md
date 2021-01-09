@@ -8,10 +8,13 @@ In Git Bash (or any terminal)..
 3. Right-click `dist/index.html`, select `Copy Path`, paste in your browser URL address bar & press Enter.
 
 ## Branches
-- **Asset-management** - Learnt how to load CSS, images, fonts & data (json, csv, xml, etc).
-- **Output-management** - .
+- **Asset-management** - Learnt how to load CSS, images & data (json, csv, xml, etc).
+- **Output-management** - Learnt how to use `HTML Webpack Plugin` to automatically recreate an `index.html` with added bundles & `Clean Webpack Plugin` to clean the `/dist` folder before each build.
 
 ## Tech Stack
 - Webpack.js
 - JavaScript
 - HTML/CSS
+
+## Things I have to learn
+- Need to learn how to load fonts. 
