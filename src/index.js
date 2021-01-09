@@ -3,6 +3,18 @@ import './style.css';
 import Icon from './images/icon.png';
 import Data from './data/data.xml';
 import Notes from './data/data.csv';
+import toml from './data.toml';
+import yaml from './data.yaml';
+import json from './data.json5';
+
+console.log(toml.title); // `TOML Example`
+console.log(toml.owner.name); // `Tom Preston-Werner`
+
+console.log(yaml.title); // `YAML Example`
+console.log(yaml.owner.name); // `Tom Preston-Werner`
+
+console.log(json.title); // `JSON5 Example`
+console.log(json.owner.name); // `Tom Preston-Werner`
 
 function component() {
     const element = document.createElement('div');
