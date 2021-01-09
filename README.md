@@ -7,6 +7,10 @@ In Git Bash (or any terminal)..
 2. Enter `cd webpack-demo`.
 3. Right-click `dist/index.html`, select `Copy Path`, paste in your browser URL address bar & press Enter.
 
+## Branches
+- **Asset-management** - Learnt how to load CSS, images, fonts & data (json, csv, xml, etc).
+- **Output-management** - .
+
 ## Tech Stack
 - Webpack.js
 - JavaScript
