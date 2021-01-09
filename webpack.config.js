@@ -13,7 +13,10 @@ module.exports = {
         contentBase: './dist' // telling webpack-dev-server to serve files in '/dist' directory
     },
     plugins: [
-        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }), // prevents the deletion of index.html (as a result of another build)
+        new CleanWebpackPlugin({
+            cleanStaleWebpackAssets: false,
+            protectWebpackAssets: false
+        }),
         new HtmlWebpackPlugin({ title: "Learning Webpack" })
     ],
     output: {
