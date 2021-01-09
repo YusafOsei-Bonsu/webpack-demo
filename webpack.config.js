@@ -9,6 +9,9 @@ module.exports = {
        print: './src/print.js'
     },
     devtool: 'inline-source-map', // locates the file where an error has occurred 
+    devServer: {
+        contentBase: './dist' // telling webpack-dev-server to serve files in '/dist' directory
+    },
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }), // prevents the deletion of index.html (as a result of another build)
         new HtmlWebpackPlugin({ title: "Learning Webpack" })
