@@ -5,3 +5,4 @@ Learning about webpack. Webpack is a module bundler & its primary purpose is to 
 ## Tech Stack
 - Webpack.js
 - JavaScript
+- HTML/CSS
