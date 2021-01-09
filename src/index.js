@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './style.css';
+import Icon from './icon.png';
 
 function component() {
     const element = document.createElement('div');
@@ -9,6 +10,11 @@ function component() {
     
     // Turning "Hello webpack" red after loading css
     element.classList.add('hello');
+
+    // Add the image to our existing div
+    const wolfIcon = new Image();
+    wolfIcon.src = Icon;
+    element.appendChild(wolfIcon);
 
     return element;
 }
