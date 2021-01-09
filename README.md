@@ -26,7 +26,9 @@ In Git Bash (or any terminal)..
 
 - Webpack's watch mode recompiles code after detecting a code change.
 
-- Webpack's dev server is capable of live reloading. 
+- Webpack's dev server is capable of live reloading. |
+
+- `webpack-dev-middleware` is a wrapper that emits files processed by webpack to a server. This is used in `webpack-dev-server` internally, however it's available as a separate package to allow more custom setups if desired. 
 
 ## Future Learning
 - Need to learn how to load fonts. 
