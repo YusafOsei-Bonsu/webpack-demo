@@ -14,8 +14,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin({
-            cleanStaleWebpackAssets: false,
-            protectWebpackAssets: false
+            cleanStaleWebpackAssets: false
         }),
         new HtmlWebpackPlugin({ title: "Learning Webpack" })
     ],
