@@ -11,6 +11,7 @@ In Git Bash (or any terminal)..
 - **Asset-management** - Learnt how to load CSS, images & data (json, csv, xml, etc).
 - **Output-management** - Learnt how to use `HTML Webpack Plugin` to automatically recreate an `index.html` with auto-created bundles & `Clean Webpack Plugin` to clean the `/dist` folder before each build.
 - **Dev-guide** - Learnt about source maps to track errors in the original source code. Learnt the existence of numerous options (i.e. webpack's `watch mode`, `webpack-dev-server` & `webpack-dev-middleware`) that recompile code when a code change is detected.
+- **Code-splitting** - Learnt how to split code using `entry` config, prevent duplication using the `dependOn` option to share modules between chunks, `SplitChunksPlugin` allows extraction of common dependencies into an existing entry chunk or a new one. Code can be dynamically split using `import() syntax` or `require.ensure` (legacy webpack approach).
 
 ## Tech Stack
 - Webpack.js
@@ -28,7 +29,11 @@ In Git Bash (or any terminal)..
 
 - Webpack's dev server is capable of live reloading. |
 
-- `webpack-dev-middleware` is a wrapper that emits files processed by webpack to a server. This is used in `webpack-dev-server` internally, however it's available as a separate package to allow more custom setups if desired. 
+- `webpack-dev-middleware` is a wrapper that emits files processed by webpack to a server. This is used in `webpack-dev-server` internally, however it's available as a separate package to allow more custom setups if desired.
+
+- Prevent duplication using the `dependOn` option to share modules between chunks.
+
+- `SplitChunksPlugin` allows extraction of common dependencies into an existing entry chunk or an entirely new chunk. In addition, this plugin can also be used to de-duplicate the `lodash` dependency from the previous example. 
 
 ## Future Learning
 - Need to learn how to load fonts. 
@@ -36,4 +41,4 @@ In Git Bash (or any terminal)..
 ## Blockers/Resolutions
 | Blockers | Resolutions |
 |----------|-------------|
-| Couldn't run webpack dev server as port 3000 was already in use. | First, open CMD.exe, enter `netstat -ano | findstr :<PORT>` (`<PORT>` should be the port number that the server is running on). Next, enter `taskkill /PID <PID> /F`. [Click here for an example](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) |
+| Couldn't run webpack dev server as port 3000 was already in use. | First, open CMD.exe, enter `netstat -ano | findstr :<PORT>` (`<PORT>` should be the port number that the server is running on). Next, enter `taskkill /PID <PID> /F` (`<PID>` should be the right-most digits). [Click here for an example](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) |
