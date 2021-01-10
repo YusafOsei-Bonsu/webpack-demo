@@ -4,16 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        index: { 
-           import : './src/index.js',
-           dependOn: 'shared'
-        },
-        another: { 
-           import: './src/another-module.js' ,
-           dependOn: 'shared'
-        },
-        shared: 'lodash'
-       // print: './src/print.js',
+        index: './src/index.js',
     },
     devtool: 'inline-source-map', // locates the file where an error has occurred 
     devServer: {
@@ -26,10 +17,5 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         // publicPath: '/' // Ensures files are served on http://localhost:3000
-    },
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
     }
 }
