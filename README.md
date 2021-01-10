@@ -41,4 +41,4 @@ In Git Bash (or any terminal)..
 ## Blockers/Resolutions
 | Blockers | Resolutions |
 |----------|-------------|
-| Couldn't run webpack dev server as port 3000 was already in use. | First, open CMD.exe, enter `netstat -ano | findstr :<PORT>` (`<PORT>` should be the port number that the server is running on). Next, enter `taskkill /PID <PID> /F` (`<PID>` should be the right-most digits). [Click here for an example](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) |
+| Couldn't run webpack dev server as port 3000 was already in use. | [Click here for the solution](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) |
